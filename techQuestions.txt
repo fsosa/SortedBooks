@@ -1,7 +1,7 @@
 Objective-C / iOS Technical Questions:
 
 Explain retain counts
-	When created, objects begin their lives with a retain count of 1. In manual memory management, upon subsequent retain messages (i.e. [object retain]) to the object, the retain count is incremented by one for each received retain message. In order to decrement the retain count, the object is setnt eh release message (i.e. [object release]). As long as the retain count of an object is greater than 0, it will remain in memory. Once the retain count reaches 0, the object will be destroyed. 
+	When created, objects begin their lives with a retain count of 1. In manual memory management, upon subsequent retain messages (i.e. [object retain]) to the object, the retain count is incremented by one for each received retain message. In order to decrement the retain count, the object is sent the release message (i.e. [object release]). As long as the retain count of an object is greater than 0, it will remain in memory. Once the retain count reaches 0, the object will be destroyed. 
 
 What is automatic reference counting?
 	ARC (Automatic Reference Counting) handles the insertion of these retain and release method for us when the code is being compiled. As a result, we cannot manually send the retain, release, or autorelease messages to objects.
